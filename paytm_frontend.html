@@ -1,0 +1,1053 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PayTm:fast & secure</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        #header {
+            height: 130px;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        #header>div {
+            height: 70px;
+            width: 30%;
+        }
+
+        #header>div:nth-child(1),
+        #header>div:nth-child(3) {
+            width: 12%;
+        }
+
+        #header>div:nth-child(2) {
+            width: 60%;
+        }
+
+        #logo>img {
+            width: 100%;
+        }
+
+        #header-mid {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            grid-template-rows: repeat(1, 1fr);
+            gap: 15px;
+        }
+
+        /* #header-mid>div{
+            border: 1px solid red;
+        } */
+        #header-mid>div>p {
+            color: rgb(81, 80, 80);
+            text-align: center;
+            margin-top: 26px;
+            font-size: large;
+            font-weight: bolder;
+        }
+
+        #header-mid>div:hover {
+            background-color: ghostwhite;
+            opacity: 0.9;
+            color: black;
+        }
+
+        #login-profile>div {
+            width: 60%;
+            height: 40px;
+            display: flex;
+            justify-content: space-between;
+            background-color: rgb(0, 115, 255);
+            margin: auto;
+            align-items: center;
+            margin-top: 18px;
+            border-radius: 20px;
+        }
+
+        #login-profile>div>p {
+            color: white;
+            font-size: large;
+            font-weight: bold;
+            padding-left: 10px;
+        }
+
+        #notice {
+            text-align: center;
+            font-size: 18px;
+            margin: 10px 0px;
+            font-weight: lighter;
+            color: black;
+        }
+
+        #middle>div {
+            height: 800px;
+            width: 100%;
+            display: grid;
+            grid-template-columns: 60% 40%;
+            grid-template-rows: repeat(1, 1fr);
+        }
+
+        #mid-sec {
+            height: auto;
+            width: 80%;
+            margin-top: 165px;
+            padding-left: 120px;
+
+        }
+
+        #mid-sec>div {
+            width: 100%;
+        }
+
+        #mid-sec>div>img {
+            width: 80px;
+            height: 80px;
+        }
+
+        #mid-sec>div>h1 {
+            width: 70%;
+            font-size: 50px;
+            margin: 40px 0px;
+        }
+
+        #mid-sec>div>p {
+            width: 70%;
+            color: #000000;
+            padding: 10px 0px 0px;
+            font-size: 20px;
+            font-weight: bolder;
+        }
+
+        #mid-sec>div>button {
+            margin: 40px 0px 80px 0px;
+            width: 40%;
+            display: flex;
+            justify-content: space-between;
+            border-radius: 20px;
+            background-color: #000000;
+            padding: 15px 0px;
+        }
+
+        #mid-sec>div>button>p {
+            padding: 10px;
+            color: white;
+            font-size: 18px;
+
+        }
+
+        #mid-sec>div>button>img {
+            width: 20px;
+            padding: 10px;
+            color: black;
+        }
+
+        #mid-right>img {
+            float: right;
+            width: 100%;
+            height: 600px;
+
+            margin-bottom: 50px;
+            margin-top: 165px;
+        }
+
+        #background {
+            height: 400px;
+            background-color: rgb(48, 128, 248);
+            margin-top: 220px;
+        }
+
+        #background>h1 {
+            color: white;
+            font-size: 32px;
+            padding: 80px 0px 0px 170px;
+        }
+
+        #container {
+            width: 83%;
+            margin: auto;
+            height: 150px;
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            grid-template-rows: repeat(1, 1fr);
+            gap: 30px;
+        }
+
+        #container>div>img {
+            width: 45%;
+            margin: 25px 0px 0px 50px;
+            margin-bottom: 15px;
+        }
+
+        #container>div>p {
+            color: white;
+            font-weight: bold;
+            width: 60%;
+            line-height: 25px;
+            font-size: 20px;
+            /* margin-left: 10px;
+            margin: auto; */
+            margin: 0px 0px 0px 50px;
+        }
+
+        #background-ticket {
+            height: 400px;
+            background-color: rgb(48, 58, 248);
+        }
+
+        #background-ticket>h1 {
+            color: white;
+            font-size: 32px;
+            padding: 80px 0px 0px 170px;
+        }
+
+        #container-ticket {
+            width: 83%;
+            margin: auto;
+            height: 150px;
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            grid-template-rows: repeat(1, 1fr);
+            gap: 30px;
+        }
+
+        #container-ticket>div>img {
+            width: 45%;
+            margin: 25px 0px 0px 50px;
+            margin-bottom: 15px;
+        }
+
+        #container-ticket>div>p {
+            color: white;
+            font-weight: bold;
+            width: 60%;
+            line-height: 25px;
+            font-size: 20px;
+            /* margin-left: 10px;
+            margin: auto; */
+            margin: 0px 0px 0px 50px;
+        }
+
+        section>h1 {
+            font-size: 50px;
+            padding: 100px 0px 0px 180px;
+            margin-bottom: 50px;
+        }
+
+        #container-method {
+            display: grid;
+            grid-template-columns: 90%;
+            grid-template-rows: repeat(4, 700px);
+            gap: 30px;
+        }
+
+        #container-method>div {
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            margin-left: 140px;
+            display: flex;
+            justify-content: space-between;
+            border-radius: 20px;
+        }
+
+
+
+        #upi-sec,
+        #method-about,
+        #postpaid-sec,
+        #invest-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(1, 1fr);
+        }
+
+        #upi-sec>div>div:nth-child(1),
+        #method-about>div>div:nth-child(1) {
+            display: flex;
+            width: 20%;
+            margin: 70px 0px 0px 140px;
+        }
+
+        #upi-sec>div>div>img,
+        #method-about>div>div>img {
+            width: 95px;
+            height: 82px;
+            padding-right: 10px;
+        }
+
+        #upi-sec>div>div:nth-child(1)>p,
+        #method-about>div>div:nth-child(1)>p {
+            font-weight: bold;
+            font-size: 17px;
+        }
+
+        #upi-sec>div:nth-child(2)>img {
+            width: 80%;
+            height: 72%;
+            margin: 80px 0px 0px 50px;
+        }
+
+        #upi-sec>div>div:nth-child(2)>h1,
+        #method-about>div>div:nth-child(2)>h1 {
+            width: 50%;
+            margin-left: 145px;
+            line-height: 45px;
+            font-size: 38px;
+            margin-top: 10px;
+        }
+
+        #upi-sec>div>div:nth-child(3)>p,
+        #method-about>div>div:nth-child(3)>p {
+            width: 50%;
+            margin-left: 145px;
+            line-height: 26px;
+            font-size: 20px;
+            color: grey;
+            margin-top: 15px;
+            margin-bottom: 20px;
+        }
+
+        #upi-sec>div>div:nth-child(4)>button,
+        #method-about>div>div:nth-child(4)>button {
+            width: 40%;
+            margin-left: 145px;
+            padding: 15px;
+            border-radius: 25px;
+            margin-top: 20px;
+            font-size: large;
+            font-weight: bold;
+            color: white;
+            background-color: black;
+        }
+
+        #method-about>div:nth-child(2)>img {
+            width: 100%;
+            height: 85%;
+            float: right;
+            margin-top: 50px;
+        }
+
+        #postpaid-sec>div>div:nth-child(1)>img {
+            width: 25%;
+            height: 25%;
+            margin: 140px 0px 0px 140px;
+        }
+
+        #postpaid-sec>div>div:nth-child(2)>h1 {
+            width: 65%;
+            margin-left: 145px;
+            line-height: 45px;
+            font-size: 38px;
+            margin-top: 10px;
+        }
+
+        #postpaid-sec>div>div:nth-child(4)>button {
+            width: 35%;
+            margin-left: 145px;
+            padding: 15px;
+            border-radius: 25px;
+            margin-top: 20px;
+            font-size: large;
+            font-weight: bold;
+            color: white;
+            background-color: rgba(0, 0, 255, 0.541);
+        }
+
+        #postpaid-sec>div>div:nth-child(3)>p {
+            width: 40%;
+            margin-left: 145px;
+            line-height: 26px;
+            font-size: 20px;
+            color: grey;
+            margin-top: 15px;
+            margin-bottom: 20px;
+        }
+
+        #postpaid-sec>div:nth-child(2)>img {
+            width: 80%;
+            height: 75%;
+            float: right;
+            margin-top: 50px;
+        }
+
+        #invest-container {
+            gap: 30px;
+        }
+
+        #invest-container>div {
+            box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+            width: 48%;
+            border-radius: 20px;
+        }
+
+        #invest-container>div>div:nth-child(1)>img {
+            width: 38%;
+            margin: 85px 0 0 70px;
+        }
+
+        #invest-paytm>div:nth-child(2)>h1,
+        #invest-container>div>div:nth-child(2)>h1 {
+            width: 70%;
+            font-size: 40px;
+            font-weight: bolder;
+            margin: 40px 0 0 70px;
+        }
+
+        #invest-paytm>div:nth-child(3)>p,
+        #invest-container>div>div:nth-child(3)>p {
+            width: 80%;
+            font-size: 20px;
+            font-weight: larger;
+            margin: 30px 0 0 70px;
+        }
+
+        #invest-paytm>div:nth-child(4)>img,
+        #invest-container>div>div:nth-child(4)>img {
+            width: 70%;
+            height: 100%;
+            margin: 40px 0 0 140px;
+        }
+
+        #section-cont,
+        #section-business {
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+            margin-top: 120px;
+            height: 900px;
+        }
+
+
+        #finance-container,
+        #business-container1 {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: 650px;
+            gap: 30px;
+        }
+
+        #section-cont>h1,
+        #section-business>h1 {
+            font-size: 48px;
+            color: #000000;
+
+        }
+
+        /* #finance-container>div{
+            border: 1px solid;
+
+        } */
+
+        #finance-container>div:nth-child(1)>img,
+        #business-container1>div:nth-child(1)>img {
+            height: 44px;
+            width: 212px;
+            margin: 65px 0px 0px 180px;
+            padding-bottom: 50px;
+
+        }
+
+        #finance-container>div:nth-child(1)>h1,
+        #business-container1>div:nth-child(1)>h1 {
+            font-size: 42px;
+            width: 60%;
+            margin-left: 180px;
+            padding-bottom: 50px;
+        }
+
+        #finance-container>div:nth-child(1)>p,
+        #business-container1>div:nth-child(1)>p {
+            font-size: 24px;
+            width: 70%;
+            margin-left: 180px;
+            padding-bottom: 50px;
+        }
+
+        #finance-container>div:nth-child(1)>button,
+        #business-container1>div:nth-child(1)>button {
+            width: 30%;
+            margin-left: 180px;
+            font-size: 24px;
+            padding: 10px;
+            border-radius: 25px;
+            color: white;
+            background-color: rgb(0, 0, 220);
+            border: none;
+
+        }
+
+        #finance-container>div:nth-child(2)>img,
+        #business-container1>div:nth-child(2)>img {
+            height: 500px;
+            margin: 70px 0px 0px 160px;
+        }
+
+        #insurance-section,
+        #insurance-car {
+            width: 100%;
+            height: 750px;
+        }
+
+        #insurance-container,
+        #car-container {
+            width: 100%;
+            height: 700px;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+            margin-top: 100px;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: 100%;
+            gap: 100px;
+        }
+
+        /* 
+        #insurance-container>div{
+            border: 3px solid hotpink;
+        } */
+
+        #insurance-container>div:nth-child(1)>img,
+        #car-container>div:nth-child(2)>img {
+            width: 70%;
+            height: 69%;
+            margin: 120px 0px 0px 120px;
+        }
+
+        #insurance-container>div:nth-child(2)>img,
+        #car-container>div:nth-child(1)>img {
+            width: 154px;
+            height: 54.8px;
+            margin: 150px 0px 0px 70px;
+        }
+
+        #insurance-container>div:nth-child(2)>h1,
+        #car-container>div:nth-child(1)>h1 {
+            font-size: 48px;
+            width: 75%;
+            margin: 30px 0px 0px 70px;
+        }
+
+        #insurance-container>div:nth-child(2)>p,
+        #car-container>div:nth-child(1)>p {
+            font-size: 20px;
+            width: 85%;
+            margin: 30px 0px 0px 70px;
+            line-height: 28px;
+        }
+
+        #insurance-container>div:nth-child(2)>button,
+        #car-container>div:nth-child(1)>button {
+            width: 30%;
+            margin: 30px 0px 0px 70px;
+            font-size: 24px;
+            padding: 10px;
+            border-radius: 25px;
+            color: white;
+            background-color: rgb(0, 0, 220);
+            border: none;
+        }
+
+
+        #money-business,
+        #digital-business {
+            width: 100%;
+            height: 700px;
+            /* border: 1px solid; */
+        }
+
+        #money-container2,
+        #digital-container2 {
+            width: 80%;
+            height: 600px;
+            margin: auto;
+            margin-top: 50px;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: 500px;
+            gap: 30px;
+            border-radius: 20px;
+        }
+
+        /* #money-container2>div{
+            border: 2px solid green;
+        } */
+
+        #money-container2>div:nth-child(1)>h1,
+        #digital-container2>div:nth-child(1)>h1 {
+            font-size: 38px;
+            width: 59%;
+            line-height: 48px;
+            margin: 100px 0px 0px 140px;
+        }
+
+        #money-container2>div:nth-child(1)>p,
+        #digital-container2>div:nth-child(1)>p {
+            font-size: 20px;
+            width: 60%;
+            margin: 40px 0px 0px 140px;
+            line-height: 28px;
+        }
+
+        #money-container2>div:nth-child(1)>button,
+        #digital-container2>div:nth-child(1)>button {
+            width: 30%;
+            margin: 70px 0px 0px 140px;
+            font-size: 24px;
+            padding: 10px;
+            border-radius: 25px;
+            color: white;
+            background-color: rgb(0, 0, 220);
+            border: none;
+        }
+
+        #money-container2>div:nth-child(2)>img {
+            width: 450px;
+            height: 390px;
+            margin: 80px 0px 0px 139px;
+        }
+
+        #digital-container2>div:nth-child(2)>img {
+            width: 450px;
+            height: 450px;
+            margin: 80px 0px 0px 139px;
+        }
+
+        #about-app {
+            width: 100%;
+            height: 800px;
+            /* border: 1px solid red; */
+        }
+
+        #about-app>h1 {
+            width: 35%;
+        }
+
+        #about-app-container {
+            width: 80%;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: 600px;
+            gap: 40px;
+        }
+
+        /* #about-app-container>div{
+            border: 1px solid blue;
+            
+        } */
+
+        #about-app-container>div>img {
+            width: 100%;
+            height: 260px;
+
+            margin-bottom: 15px;
+        }
+
+        #about-app-container>div>h1 {
+            width: 60%;
+            line-height: 35px;
+            font-size: 30px;
+            padding: 15px 0;
+            margin-bottom: 15px;
+        }
+
+        #about-app-container>div>span {
+            font-size: x-large;
+            color: rgb(58, 56, 56);
+        }
+
+        #about-app-container>div>a {
+            font-size: 20px;
+            text-decoration: none;
+            color: rgb(34, 33, 33);
+            font-weight: bold
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header section  -->
+    <div id="header">
+        <div id="logo">
+            <img src="https://assetscdn1.paytm.com/images/catalog/category/5165/paytm_logo.png" alt="">
+        </div>
+        <div id="header-mid">
+            <div>
+                <p>Paytm for Consumer</p>
+            </div>
+            <div>
+                <p>Paytm for Business</p>
+            </div>
+            <div>
+                <p>Investor Relation</p>
+            </div>
+            <div>
+                <p>Company</p>
+            </div>
+            <div>
+                <p>Career</p>
+            </div>
+        </div>
+        <div id="login-profile">
+            <div>
+                <p>Sign up</p>
+                <img src="https://assetscdn1.paytm.com/frontendcommonweb/9a65db05.svg" alt="">
+            </div>
+        </div>
+    </div>
+
+    <h4 id="notice">No Wallet KYC Required😊to pay using UPI on Paytm.Learn more.</h4>
+
+    <!-- middle -->
+
+    <div id="middle">
+        <div>
+            <div id="mid-sec">
+                <div>
+                    <img src="https://assetscdn1.paytm.com/images/catalog/view/310944/1654517453942.png" alt="">
+                </div>
+                <div>
+                    <h1>India's Most-loved Payments App</h1>
+                </div>
+                <div>
+                    <p>Recharge & pay bills, book flights & movie tickets, open a savings account, invest in stocks &
+                        mutual funds, and do a lot more.</p>
+                </div>
+                <div>
+                    <button>
+                        <p>Download Paytm App</p> <img src="./img/play-store.svg" alt="" srcset=""></i> <img
+                            src="/AASHU/img/apple.svg" alt=""></i>
+                    </button>
+                </div>
+            </div>
+            <div id="mid-right">
+                <img src="https://assetscdn1.paytm.com/images/catalog/view_item/850762/1656568118664.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div id="background">
+        <h1>Book & Buy on Paytm.</h1>
+        <div id="container">
+            <div>
+                <img src="https://assetscdn1.paytm.com/images/catalog/view_item/733299/1626251017535.png" alt="">
+                <p>Recharge Prepaid Mobile >></p>
+            </div>
+            <div>
+                <img src="https://assetscdn1.paytm.com/images/catalog/view_item/733300/1626778824903.png" alt="">
+                <p>Pay Rent Payment ></p>
+            </div>
+            <div>
+                <img src="https://assetscdn1.paytm.com/images/catalog/view_item/733308/1626251043534.png" alt="">
+                <p>Pay Electricity Bill ></p>
+            </div>
+            <div>
+                <img src="https://assetscdn1.paytm.com/images/catalog/view_item/733311/1626251101045.png" alt="">
+                <p>Recharge DTH Connections ></p>
+            </div>
+            <div>
+                <img src="https://assetscdn1.paytm.com/images/catalog/view_item/733307/1626251127863.png" alt="">
+                <p>Book Gas Cylinder ></p>
+            </div>
+            <div>
+                <img src="https://assetscdn1.paytm.com/images/catalog/view_item/733304/1627454209116.png" alt="">
+                <p>International Flights ></p>
+            </div>
+            <div>
+                <img src="https://assetscdn1.paytm.com/images/catalog/view_item/730001/1626450848003.png" alt="">
+                <p>Invest in Stocks ></p>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="background-ticket">
+        <h1>Book & Buy on Paytm.</h1>
+        <div id="container-ticket">
+            <div>
+                <img src="https://assetscdn1.paytm.com/images/catalog/view_item/733295/1626259710574.png" alt="">
+                <p>Movie Tickets ></p>
+            </div>
+            <div>
+                <img src="https://assetscdn1.paytm.com/images/catalog/view_item/733296/1626259884425.png" alt="">
+                <p>Flight Tickets ></p>
+            </div>
+            <div>
+                <img src="https://assetscdn1.paytm.com/images/catalog/view_item/729996/1626260477699.png" alt="">
+                <p>Bus Tickets ></p>
+            </div>
+            <div>
+                <img src="https://assetscdn1.paytm.com/images/catalog/view_item/729997/1626260495975.png" alt="">
+                <p>Train's Tickets ></p>
+            </div>
+            <div>
+                <img src="https://assetscdn1.paytm.com/images/catalog/view_item/729998/1666185237748.png" alt="">
+                <p>Buy Insurances ></p>
+            </div>
+            <div>
+                <img src="https://assetscdn1.paytm.com/images/catalog/view_item/729999/1626259968563.png" alt="">
+                <p>International Flights ></p>
+            </div>
+            <div>
+                <img src="https://assetscdn1.paytm.com/images/catalog/view_item/730001/1626450848003.png" alt="">
+                <p>Invest in Stocks ></p>
+            </div>
+        </div>
+    </div>
+
+    <section>
+        <h1>Paytm Payment Instruments</h1>
+        <div id="container-method">
+            <div id="method-container">
+                <div id="method-about">
+                    <div>
+                        <div>
+                            <img src="https://assetscdn1.paytm.com/images/catalog/view/307185/1617861564011.png" alt="">
+                            <p>Payment Wallet</p>
+                        </div>
+                        <div>
+                            <h1>The Fastest Way to Pay In-store & Online.</h1>
+                        </div>
+                        <div>
+                            <p>Load up your Paytm Wallet for free and make payments in a jiffy at over 21 million
+                                stores, websites and apps.</p>
+                        </div>
+                        <div>
+                            <button>Download Paytm App</button>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="https://assetscdn1.paytm.com/images/catalog/view_item/728701/1618577020961.png"
+                            alt="">
+                    </div>
+                </div>
+            </div>
+            <div id="upi-container">
+                <div id="upi-sec">
+                    <div>
+                        <div>
+                            <img src="https://assetscdn1.paytm.com/images/catalog/view/307186/1615957674521.png" alt="">
+                            <p>UPI Money Transfer</p>
+                        </div>
+                        <div>
+                            <h1>Pay anyone directly from your bank account.</h1>
+                        </div>
+                        <div>
+                            <p>Pay anyone, everywhere. Make contactless & secure payments in-stores or online using
+                                Paytm Wallet or
+                                Directly from your
+                                Bank Account. Plus, send & receive money from anyone.</p>
+                        </div>
+                        <div>
+                            <button>Download Paytm App</button>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="https://assetscdn1.paytm.com/images/catalog/view_item/728702/1626342071104.png"
+                            alt="">
+                    </div>
+
+                </div>
+            </div>
+            <div id="postpaid-container">
+                <div id="postpaid-sec">
+                    <div>
+                        <div>
+                            <img src="https://assetscdn1.paytm.com/images/catalog/view/307191/1613622537678.png" alt="">
+                        </div>
+                        <div>
+                            <h1>Want it?<br>
+                                No more waiting for it.</h1>
+                        </div>
+                        <div>
+                            <p>With Paytm Postpaid, your wishlist doesn't have to be on the waitlist. Shop for the
+                                things you want today and pay
+                                for
+                                them next month.</p>
+                        </div>
+                        <div>
+                            <button>Learn More</button>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="https://assetscdn1.paytm.com/images/catalog/view_item/850764/1626077030984.png"
+                            alt="">
+                    </div>
+
+                </div>
+            </div>
+
+            <div id="invest-container">
+                <div id="invest-paytm">
+                    <div>
+                        <img src="https://assetscdn1.paytm.com/images/catalog/view_item/853975/1640242865113.png"
+                            alt="">
+                    </div>
+                    <div>
+                        <h1>Unlimited Cashback Every time.</h1>
+                    </div>
+                    <div>
+                        <p>Paytm HDFC Bank Select Credit Card. A card with assured Cashback and incredible offers</p>
+                    </div>
+                    <div>
+                        <img src="https://assetscdn1.paytm.com/images/catalog/view_item/853975/1640241561388.png"
+                            alt="">
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <img src="https://assetscdn1.paytm.com/images/catalog/view_item/853976/1640242163727.png"
+                            alt="">
+                    </div>
+                    <div>
+                        <h1>India’s Most
+                            Sincere Credit Card</h1>
+                    </div>
+                    <div>
+                        <p>Paytm SBI Card SELECT - With Intelligent Features & Great Rewards that Never Expire</p>
+                    </div>
+                    <div>
+                        <img src="https://assetscdn1.paytm.com/images/catalog/view_item/853976/1626079147084.png"
+                            alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="section-cont">
+        <h1>Financial Services by Paytm</h1>
+        <div id="finance-container">
+            <div>
+                <img src="https://assetscdn1.paytm.com/images/catalog/view/307193/1617696576778.png" alt="">
+                <h1>India's most sincere bank.</h1>
+                <p>Paytm Payments Bank offers secure, transparent and risk-free banking at your fingertips. With instant
+                    account opening,
+                    virtual debit card and zero balance requirements, experience the future of banking today.</p>
+                <button>Learn More ></button>
+            </div>
+            <div>
+                <img src="https://assetscdn1.paytm.com/images/catalog/view_item/728826/1626076427497.png" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section id="insurance-section">
+        <div id="insurance-container">
+            <div>
+                <img src="https://assetscdn1.paytm.com/images/catalog/view_item/850765/1655987252365.png" alt="">
+            </div>
+            <div>
+                <img src="https://assetscdn1.paytm.com/images/catalog/view/308777/1617695287770.png" alt="">
+                <h1>Get a Personal Loan in 2 Minutes.</h1>
+                <p>Paytm offers India's quickest multi-purpose, hassle-free loan. It is 100% digital, transparent and
+                    paperless.</p>
+                <button>Learn More ></button>
+            </div>
+        </div>
+    </section>
+
+    <section id="insurance-car">
+        <div id="car-container">
+            <div>
+                <img src="https://assetscdn1.paytm.com/images/catalog/view/308775/1653901470333.jpeg" alt="">
+                <h1>Insurance made easy.</h1>
+                <p>Buying insurance does not have to be tedious, time-consuming & confusing. Paytm Insurance removes the
+                    worry of getting
+                    insured by making it simple, convenient & easy-to-understand.</p>
+                <button>Learn More ></button>
+            </div>
+            <div>
+                <img src="https://assetscdn1.paytm.com/images/catalog/view_item/788790/1653913927257.png" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section id="section-business">
+        <h1>Business Services by Paytm</h1>
+        <div id="business-container1">
+            <div>
+                <img src="https://assetscdn1.paytm.com/images/catalog/view/307193/1617696576778.png" alt="">
+                <h1>India's most sincere bank.</h1>
+                <p>Paytm Payments Bank offers secure, transparent and risk-free banking at your fingertips. With instant
+                    account opening,
+                    virtual debit card and zero balance requirements, experience the future of banking today.</p>
+                <button>Learn More ></button>
+            </div>
+            <div>
+                <img src="https://assetscdn1.paytm.com/images/catalog/view_item/728826/1626076427497.png" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section id="money-business">
+        <div id="money-container2">
+            <div>
+                <h1>In-shop payments powered by Paytm.</h1>
+                <p>Millions of small & big businesses use Paytm to accept payments anywhere any time with a wide range
+                    of solutions for all
+                    kind of merchants</p>
+                <button>Learn More ></button>
+            </div>
+            <div>
+                <img src="https://assetscdn1.paytm.com/images/catalog/view_item/853880/1656675942486.png" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section id="digital-business">
+        <div id="digital-container2">
+            <div>
+                <h1>Accept payments online with ease</h1>
+                <p>Grow your business with the payment gateway that powers India’s largest brands and even the Paytm App
+                </p>
+                <button>Learn More ></button>
+            </div>
+            <div>
+                <img src="https://assetscdn1.paytm.com/images/catalog/view_item/853877/1626077000254.png" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section id="about-app">
+        <h1>Business Tools to help your business grow</h1>
+        <div id="about-app-container">
+            <div>
+                <img src="https://assetscdn1.paytm.com/images/catalog/view_item/854033/1626081565192.png" alt="">
+                <h1>POS Billing Software</h1>
+                <span>Say Hello to Smart Retail Business Management</span><br><br>
+                <a href="">Learn More</a>
+            </div>
+            <div>
+                <img src="https://assetscdn1.paytm.com/images/catalog/view_item/854035/1626081071077.png" alt="">
+                <h1>Paytm for
+                    Business App</h1>
+                <span>Everything you need to manage your business on your phone</span><br><br>
+                <a href="">Learn More</a>
+            </div>
+            <div>
+                <img src="https://assetscdn1.paytm.com/images/catalog/view_item/854036/1656568216166.png" alt="">
+                <h1>Advertise on Paytm</h1>
+                <span>Grow your business by advertising on India’s largest mobile business</span><br><br>
+                <a href="">Learn More</a>
+            </div>
+            <div>
+                <img src="https://assetscdn1.paytm.com/images/catalog/view_item/854038/1626081814411.png" alt="">
+                <h1>Business
+                    Khata</h1>
+                <span>Managing Khata made easy</span><br><br><br>
+                <a href="">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>
