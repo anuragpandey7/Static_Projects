@@ -81,7 +81,7 @@
             border-radius: 5px;
         }
 
-        #login-netflix{
+        #login-netflix,#login-netflix-bottom{
             width: 50%;
             height: 500px;
             position: absolute;
@@ -106,7 +106,7 @@
             font-weight: 400;
         }
 
-        #login-netflix>p{
+        #login-netflix>p,#login-netflix-bottom>p{
             width: 78%;
             margin: 18px 83px;
             font-size: 20px;
@@ -116,7 +116,7 @@
             display: flex;
         }
 
-        #login-netflix>form>input{
+        #login-netflix>form>input,#login-netflix-bottom>form>input{
             width: 68%;
             height: 59px;
             border-radius: 3px;
@@ -124,7 +124,7 @@
             /* margin-bottom: 10px; */
             border: none;
         }
-        #login-netflix>form>button{
+        #login-netflix>form>button,#login-netflix-bottom>form>button{
             width: 25%;
             height: 59px;
             border: none;
@@ -192,28 +192,28 @@
         #faq-container{
             /* border: 2px solid red; */
             width: 100%;
-            height: 900px;
+            height: 1100px;
             background-color: #000000;
             margin-top: -12px;
         }
 
-        #faq-container>h1{
+        #faq-container>h1:first-child{
             color: #ffffff;
             text-align: center;
             padding: 60px 0px;
             font-size: 60px;
         }
 
-        #container-5{
+        #container-5>div:first-child{
             width: 55%;
-            height: 80%;
+            height: 720px;
             margin: auto;
             display: grid;
             grid-template-columns: repeat(1,1fr);
             grid-template-rows: repeat(7,90px);
             gap: 20px;
         }
-        #container-5>div{
+        #container-5>div>div{
             /* border: 2px solid greenyellow; */
             display: flex;
             justify-content: space-between;
@@ -221,11 +221,18 @@
             background-color: rgb(57, 54, 54);
         }
 
-        #container-5>div>h1{
+        #container-5>div>div>h1{
             color: #e1d8d8;
             font-size: 34px;
             font-weight: 500;
             padding: 0px 20px;
+        }
+
+
+        #login-netflix-bottom{
+          height: 200px;
+          width: 50%;
+          margin: 0 30px 100px 380px ;
         }
 
     </style>
@@ -322,33 +329,44 @@
         <h1>Frequently Asked Questions</h1>
         <div id="container-5">
             <div>
-                <h1>What is Netflix ?</h1>
-                <h1>+</h1>
+                <div>
+                    <h1>What is Netflix ?</h1>
+                    <h1>+</h1>
+                </div>
+                <div>
+                    <h1>How much does Netflix cost ?</h1>
+                    <h1>+</h1>
+                </div>
+                <div>
+                    <h1>Where can i watch ?</h1>
+                    <h1>+</h1>
+                </div>
+                <div>
+                    <h1>How do i cancel ?</h1>
+                    <h1>+</h1>
+                </div>
+                <div>
+                    <h1>How can i watch on Netflix ?</h1>
+                    <h1>+</h1>
+                </div>
+                <div>
+                    <h1>Is Netflix good for kids ?</h1>
+                    <h1>+</h1>
+                </div>
             </div>
-            <div>
-                <h1>How much does Netflix cost ?</h1>
-                <h1>+</h1>
-            </div>
-            <div>
-                <h1>Where can i watch ?</h1>
-                <h1>+</h1>
-            </div>
-            <div>
-                <h1>How do i cancel ?</h1>
-                <h1>+</h1>
-            </div>
-            <div>
-                <h1>How can i watch on Netflix ?</h1>
-                <h1>+</h1>
-            </div>
-            <div>
-                <h1>Is Netflix good for kids ?</h1>
-                <h1>+</h1>
+            <div id="login-netflix-bottom">
+                <p>Ready to watch? Enter your email to create or restart your membership.</p>
+                <form action="">
+                    <input id="email" type="email" placeholder="Email address">
+                    <button>Get Started ></button>
+                </form>
             </div>
         </div>
     </div>
 
     <br>
+
+    
 
 
 </body>
